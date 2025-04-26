@@ -9,5 +9,11 @@ namespace JugadoresFutbolPeruano.Models
 
         public int TeamId { get; set; }
         public Team Team { get; set; }
+
+        public Assignment()
+        {
+            Player = null!;
+            Team = null!;
+        }
     }
 }

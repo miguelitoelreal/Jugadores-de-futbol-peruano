@@ -31,5 +31,31 @@ namespace JugadoresFutbolPeruano.Data
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public static void SeedData(AppDbContext context)
+        {
+            if (!context.Teams.Any())
+            {
+                context.Teams.AddRange(
+                    new Team { Name = "Alianza Lima" },
+                    new Team { Name = "Universitario" },
+                    new Team { Name = "Sporting Cristal" }
+                );
+                context.SaveChanges();
+            }
+
+            if (!context.Players.Any())
+            {
+                var firstTeam = context.Teams.OrderBy(t => t.Id).FirstOrDefault();
+                if (firstTeam != null)
+                {
+                    context.Players.AddRange(
+                        new Player { Name = "Paolo Guerrero", Age = 39, Position = "Delantero", TeamId = firstTeam.Id },
+                        new Player { Name = "Jefferson Farfán", Age = 37, Position = "Delantero", TeamId = firstTeam.Id }
+                    );
+                    context.SaveChanges();
+                }
+            }
+        }
     }
 }
