@@ -24,11 +24,12 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Inicializar datos de ejemplo
+// Aplicar migraciones automáticamente al iniciar la aplicación
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    AppDbContext.SeedData(context);
+    context.Database.Migrate(); // Aplica las migraciones pendientes
+    AppDbContext.SeedData(context); // Inicializa los datos de ejemplo
 }
 
 // Configurar el pipeline de solicitudes HTTP
