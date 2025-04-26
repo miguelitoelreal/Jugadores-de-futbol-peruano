@@ -1,0 +1,25 @@
+@model IEnumerable<JugadoresFutbolPeruano.Models.Player>
+
+<h2>Lista de Jugadores</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Posición</th>
+            <th>Equipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var player in Model)
+        {
+            <tr>
+                <td>@player.Name</td>
+                <td>@player.Age</td>
+                <td>@player.Position</td>
+                <td>@(player.Team != null ? player.Team.Name : "Sin equipo")</td>
+            </tr>
+        }
+    </tbody>
+</table>
