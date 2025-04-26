@@ -2818,11 +2818,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tottus Electro\\Desktop\\parcial\\JugadoresFutbolPeruano\\JugadoresFutbolPeruano.csproj",
+      "projectUniqueName": "C:\\Users\\Tottus Electro\\Desktop\\parcial1\\Jugadores-de-futbol-peruano\\JugadoresFutbolPeruano.csproj",
       "projectName": "JugadoresFutbolPeruano",
-      "projectPath": "C:\\Users\\Tottus Electro\\Desktop\\parcial\\JugadoresFutbolPeruano\\JugadoresFutbolPeruano.csproj",
+      "projectPath": "C:\\Users\\Tottus Electro\\Desktop\\parcial1\\Jugadores-de-futbol-peruano\\JugadoresFutbolPeruano.csproj",
       "packagesPath": "C:\\Users\\Tottus Electro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tottus Electro\\Desktop\\parcial\\JugadoresFutbolPeruano\\obj\\",
+      "outputPath": "C:\\Users\\Tottus Electro\\Desktop\\parcial1\\Jugadores-de-futbol-peruano\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tottus Electro\\AppData\\Roaming\\NuGet\\NuGet.Config"

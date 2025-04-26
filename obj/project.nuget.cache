@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kut5TE3i8AM=",
+  "dgSpecHash": "RcuR70sHYpE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tottus Electro\\Desktop\\parcial\\JugadoresFutbolPeruano\\JugadoresFutbolPeruano.csproj",
+  "projectFilePath": "C:\\Users\\Tottus Electro\\Desktop\\parcial1\\Jugadores-de-futbol-peruano\\JugadoresFutbolPeruano.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tottus Electro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Tottus Electro\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
