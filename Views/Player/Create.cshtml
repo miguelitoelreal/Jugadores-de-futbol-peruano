@@ -1,0 +1,29 @@
+@model JugadoresFutbolPeruano.Models.Player
+
+<h2>Registrar Jugador</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label for="Name">Nombre</label>
+        <input type="text" id="Name" name="Name" required />
+    </div>
+    <div>
+        <label for="Age">Edad</label>
+        <input type="number" id="Age" name="Age" required min="18" />
+    </div>
+    <div>
+        <label for="Position">Posición</label>
+        <input type="text" id="Position" name="Position" required />
+    </div>
+    <div>
+        <label for="TeamId">Equipo</label>
+        <select id="TeamId" name="TeamId">
+            <option value="">Seleccione un equipo</option>
+            @foreach (var team in ViewBag.Teams)
+            {
+                <option value="@team.Id">@team.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Registrar</button>
+</form>
